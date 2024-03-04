@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
+  background-color: #ffffff;
   color: #212121;
   line-height: 1.5;
 }
@@ -19,7 +20,6 @@ button {
 
 p a,
 li a {
-  color: #212121;
   font-weight: 500;
   font-size: 20px;
 }
@@ -138,4 +138,76 @@ li a {
   border-radius: 8px;
   color: #ffffff;
   margin-top: 16px;
+}
+
+/* task-5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget p {
+  font-size: 20px;
+}
+
+.change-color {
+  min-width: 148px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: #4e75ff;
+  border: 0 solid transparent;
+  border-radius: 8px;
+}
+
+/* task-6 */
+
+#controls {
+  background-color: #f6f6fe;
+  width: 486px;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+}
+
+#controls button {
+  width: 120px;
+  height: 40px;
+  border: 0 solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+#controls button[data-create] {
+  background-color: #4e75ff;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#boxes {
+  width: 486px;
+  min-height: 160px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
 }
